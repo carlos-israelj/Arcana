@@ -1,5 +1,5 @@
 {
-  "defaultChain": "bellecour",
+  "defaultChain": "arbitrum-sepolia-testnet",
   "projectName": "arcana-dividend-calculator",
   "template": "Python",
   "dockerhubUsername": "carlosisraelj",

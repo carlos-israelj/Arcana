@@ -31,7 +31,7 @@ ENTRYPOINT_ADDRESS=0x5FF137D4b0FDCD49DcA30c7CF57E578a026d2789
 Update `iapp/iapp.config.json`:
 ```json
 {
-  "defaultChain": "bellecour",
+  "defaultChain": "arbitrum-sepolia-testnet",
   "projectName": "arcana-dividend-calculator",
   "template": "Python",
   "dockerhubUsername": "your_dockerhub_username",
@@ -40,6 +40,8 @@ Update `iapp/iapp.config.json`:
   "dockerhubAccessToken": "your_dockerhub_token"
 }
 ```
+
+**Important:** We're using `arbitrum-sepolia-testnet` instead of `bellecour` for the hackathon.
 
 Get DockerHub access token:
 1. Go to https://hub.docker.com/settings/security
@@ -57,8 +59,10 @@ NEXT_PUBLIC_PAYMASTER_ADDRESS=
 NEXT_PUBLIC_PAYMENT_TOKEN_ADDRESS=
 NEXT_PUBLIC_IAPP_ADDRESS=
 NEXT_PUBLIC_RPC_URL=https://sepolia-rollup.arbitrum.io/rpc
-NEXT_PUBLIC_IEXEC_CHAIN_ID=134
+NEXT_PUBLIC_IEXEC_CHAIN_ID=421614
 ```
+
+**Note:** Chain ID 421614 is Arbitrum Sepolia where iExec is deployed.
 
 ## Step 2: Deploy Smart Contracts
 
@@ -90,7 +94,28 @@ forge script script/Deploy.s.sol \
 
 **Important:** Save all contract addresses - you'll need them later.
 
-## Step 3: Deploy iApp to iExec
+## Step 3: Get RLC Tokens
+
+Before deploying the iApp, you need RLC tokens for confidential computing.
+
+### Get RLC Tokens
+
+1. **Visit iExec Faucet**
+   ```
+   https://explorer.iex.ec/arbitrum-mainnet/faucet
+   ```
+
+2. **Bridge to Arbitrum Sepolia**
+   ```
+   https://portal.arbitrum.io/bridge?sourceChain=sepolia&destinationChain=arbitrum-sepolia
+   ```
+
+3. **Verify on Explorer**
+   ```
+   https://explorer.iex.ec/arbitrum-sepolia-testnet
+   ```
+
+## Step 4: Deploy iApp to iExec
 
 ### A. Local Testing First
 
@@ -147,8 +172,8 @@ iapp wallet select
 # Get RLC tokens from faucet
 # Visit: https://faucet.iex.ec/
 
-# Deploy app
-iapp deploy
+# Deploy app to Arbitrum Sepolia
+iapp deploy --chain arbitrum-sepolia-testnet
 
 # Save the deployed app address!
 # It will be in: cache/bellecour/deployments.json

@@ -107,13 +107,19 @@ forge script script/Deploy.s.sol --rpc-url $ARBITRUM_SEPOLIA_RPC --broadcast --v
 
 ```bash
 cd ../iapp
-pip install -r requirements.txt
+
+# Get RLC tokens for iExec
+# Visit: https://explorer.iex.ec/arbitrum-mainnet/faucet
+# Bridge to Arbitrum Sepolia: https://portal.arbitrum.io/bridge
+
+# Import wallet
+iapp wallet import <your-private-key>
 
 # Test locally
-IEXEC_IN=./test_input IEXEC_OUT=./test_output IEXEC_ARGS="1000000000" python src/app.py
+iapp test
 
-# Deploy to iExec
-# Follow iExec documentation for deployment
+# Deploy to iExec Arbitrum Sepolia
+iapp deploy --chain arbitrum-sepolia-testnet
 ```
 
 ### 4. Run Frontend
@@ -154,10 +160,11 @@ User receives encrypted proof → Claims dividend using Merkle proof → Gas spo
 | Styling | Tailwind CSS |
 | Web3 | RainbowKit, Wagmi, Viem |
 | Smart Contracts | Solidity 0.8.20, Foundry |
-| Blockchain | Arbitrum Sepolia |
-| Privacy Layer | iExec DataProtector |
-| TEE Processing | iExec iApp (Python) |
+| Blockchain | Arbitrum Sepolia (testnet) |
+| Privacy Layer | iExec DataProtector on Arbitrum |
+| TEE Processing | iExec iApp (Python) on Arbitrum Sepolia |
 | Account Abstraction | ERC-4337 |
+| iExec Chain ID | 421614 (Arbitrum Sepolia) |
 
 ---
 

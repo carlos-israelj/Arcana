@@ -20,8 +20,10 @@ export default function ProtectBalance() {
       // Import DataProtector SDK dynamically
       const { IExecDataProtector } = await import('@iexec/dataprotector');
 
-      // Initialize DataProtector
-      const dataProtector = new IExecDataProtector(window.ethereum as any);
+      // Initialize DataProtector with Arbitrum Sepolia experimental support
+      const dataProtector = new IExecDataProtector(window.ethereum as any, {
+        allowExperimentalNetworks: true,
+      });
 
       // Create protected data
       const protectedData = await dataProtector.protectData({
@@ -50,13 +52,16 @@ export default function ProtectBalance() {
 
     try {
       const { IExecDataProtector } = await import('@iexec/dataprotector');
-      const dataProtector = new IExecDataProtector(window.ethereum as any);
+      const dataProtector = new IExecDataProtector(window.ethereum as any, {
+        allowExperimentalNetworks: true,
+      });
 
-      // Grant access to iApp with bulk processing enabled
+      // Grant access to iApp
+      // This automatically deploys orders on the network for the iApp
       const grantedAccess = await dataProtector.grantAccess({
         protectedData: protectedDataAddress,
         authorizedApp: IAPP_ADDRESS,
-        authorizedUser: '0x0000000000000000000000000000000000000000', // Any user
+        authorizedUser: '0x0000000000000000000000000000000000000000', // Any user can use this data
         numberOfAccess: 1000, // Allow multiple distributions
       });
 
