@@ -1,0 +1,19 @@
+{
+  "description": "Arcana - Confidential Dividend Distribution Calculator",
+  "license": "MIT",
+  "author": "Arcana Team",
+  "app": {
+    "owner": "YOUR_ADDRESS_HERE",
+    "name": "arcana-dividend-calculator",
+    "type": "DOCKER",
+    "multiaddr": "YOUR_DOCKER_IMAGE_URL",
+    "checksum": "YOUR_IMAGE_CHECKSUM",
+    "mrenclave": {
+      "provider": "SCONE",
+      "version": "v5",
+      "entrypoint": "python /app/app.py",
+      "heapSize": 1073741824,
+      "fingerprint": ""
+    }
+  }
+}
