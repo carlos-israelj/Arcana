@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Arcana iApp - Confidential Dividend Calculator
+Arckana iApp - Confidential Dividend Calculator
 
 This application runs inside an iExec TEE (Intel SGX/TDX) and:
 1. Receives encrypted holder balances via bulk processing
@@ -8,7 +8,7 @@ This application runs inside an iExec TEE (Intel SGX/TDX) and:
 3. Generates Merkle tree for on-chain verification
 4. Returns Merkle root and encrypted proofs
 
-Author: Arcana Team
+Author: Arckana Team
 Hackathon: iExec Hack4Privacy 2026
 """
 
@@ -203,7 +203,7 @@ def main():
     except ValueError:
         total_pool = 1000000000
 
-    print(f"Arcana iApp starting...")
+    print(f"Arckana iApp starting...")
     print(f"Input directory: {iexec_in}")
     print(f"Output directory: {iexec_out}")
     print(f"Total dividend pool: {total_pool}")
@@ -281,7 +281,7 @@ def main():
     with open(os.path.join(iexec_out, 'computed.json'), 'w') as f:
         json.dump({"deterministic-output-path": os.path.join(iexec_out, 'result.json')}, f)
 
-    print(f"Arcana iApp completed successfully")
+    print(f"Arckana iApp completed successfully")
     print(f"Merkle root: {merkle_root_hex}")
     print(f"Holders: {len(balances)}")
     print(f"Total distributed: {total_pool}")

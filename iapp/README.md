@@ -1,6 +1,6 @@
-# Arcana iApp - Confidential Dividend Calculator
+# Arckana iApp - Confidential Dividend Calculator
 
-This is the confidential computing component of Arcana that runs inside an iExec Trusted Execution Environment (TEE).
+This is the confidential computing component of Arckana that runs inside an iExec Trusted Execution Environment (TEE).
 
 ## Overview
 

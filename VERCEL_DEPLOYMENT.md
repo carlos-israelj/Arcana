@@ -1,6 +1,6 @@
-# Vercel Deployment Guide for Arcana Frontend
+# Vercel Deployment Guide for Arckana Frontend
 
-Complete guide to deploy Arcana's Next.js frontend to Vercel.
+Complete guide to deploy Arckana's Next.js frontend to Vercel.
 
 ---
 
@@ -16,7 +16,7 @@ Complete guide to deploy Arcana's Next.js frontend to Vercel.
 2. **Import Project to Vercel**
    - Go to https://vercel.com/new
    - Click "Import Git Repository"
-   - Select: `carlos-israelj/Arcana`
+   - Select: `carlos-israelj/Arckana`
    - Select: `frontend` as root directory
 
 3. **Configure Project**
@@ -145,7 +145,7 @@ vercel env pull .env.vercel.local
 Vercel will automatically detect:
 
 ```
-Arcana/
+Arckana/
 └── frontend/              # Root directory in Vercel settings
     ├── package.json       # Dependencies
     ├── next.config.js     # Next.js configuration
@@ -412,7 +412,7 @@ vercel rm [deployment-url]
 
 2. **Share Links**
    - Demo URL: `https://your-project.vercel.app`
-   - GitHub: `https://github.com/carlos-israelj/Arcana`
+   - GitHub: `https://github.com/carlos-israelj/Arckana`
 
 3. **Test Everything**
    - Go through full user flow
@@ -458,4 +458,4 @@ After deployment:
 
 **Ready to deploy!** 🚀
 
-Your Arcana frontend will be live in ~3 minutes on Vercel!
+Your Arckana frontend will be live in ~3 minutes on Vercel!

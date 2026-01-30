@@ -1,6 +1,6 @@
-# iExec Setup Guide for Arcana
+# iExec Setup Guide for Arckana
 
-Complete guide for setting up Arcana on iExec Arbitrum Sepolia testnet.
+Complete guide for setting up Arckana on iExec Arbitrum Sepolia testnet.
 
 ## Prerequisites
 
@@ -157,7 +157,7 @@ const protectedData = await dataProtector.protectData({
     holder: address,
     balance: parseInt(balance) * 1000000,
   },
-  name: `Arcana Balance - ${address.slice(0, 8)}`,
+  name: `Arckana Balance - ${address.slice(0, 8)}`,
 });
 
 // Grant access to iApp

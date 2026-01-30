@@ -146,7 +146,7 @@ export default function ClaimDividend() {
 
       {/* Gasless Info */}
       <div className="text-center text-gray-500 text-sm">
-        <p>⛽ Gas fees sponsored by Arcana Paymaster</p>
+        <p>⛽ Gas fees sponsored by Arckana Paymaster</p>
       </div>
     </div>
   );

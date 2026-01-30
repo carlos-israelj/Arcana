@@ -1,8 +1,8 @@
 # 🔮 ARCANA - Project Summary
 
-## What is Arcana?
+## What is Arckana?
 
-Arcana is a **confidential dividend distribution system** for tokenized treasury funds that leverages iExec's Trusted Execution Environment (TEE) to provide privacy-preserving yield distribution.
+Arckana is a **confidential dividend distribution system** for tokenized treasury funds that leverages iExec's Trusted Execution Environment (TEE) to provide privacy-preserving yield distribution.
 
 ## The Problem We Solve
 
@@ -16,7 +16,7 @@ This lack of privacy prevents institutional adoption.
 
 ## Our Solution
 
-Arcana uses **confidential computing** to process dividends privately:
+Arckana uses **confidential computing** to process dividends privately:
 
 1. **Encrypt Balances** → Holders protect their balances with iExec DataProtector
 2. **TEE Processing** → An iApp calculates dividends inside a secure enclave
@@ -26,9 +26,9 @@ Arcana uses **confidential computing** to process dividends privately:
 ## Tech Stack
 
 ### Smart Contracts (Solidity)
-- `ArcanaToken.sol` - Mock treasury token (ERC-20)
+- `ArckanaToken.sol` - Mock treasury token (ERC-20)
 - `DividendPool.sol` - Merkle-based distribution
-- `ArcanaPaymaster.sol` - ERC-4337 gasless claims
+- `ArckanaPaymaster.sol` - ERC-4337 gasless claims
 
 ### iApp (Python)
 - Runs inside Intel SGX/TDX
@@ -45,12 +45,12 @@ Arcana uses **confidential computing** to process dividends privately:
 ## Project Structure
 
 ```
-Arcana/
+Arckana/
 ├── contracts/              # Solidity smart contracts
 │   ├── src/
-│   │   ├── ArcanaToken.sol
+│   │   ├── ArckanaToken.sol
 │   │   ├── DividendPool.sol
-│   │   └── ArcanaPaymaster.sol
+│   │   └── ArckanaPaymaster.sol
 │   ├── test/
 │   ├── script/
 │   └── foundry.toml
@@ -88,9 +88,9 @@ Arcana/
 ### Smart Contracts
 | File | Lines | Purpose |
 |------|-------|---------|
-| `ArcanaToken.sol` | 40 | Mock ERC-20 treasury token |
+| `ArckanaToken.sol` | 40 | Mock ERC-20 treasury token |
 | `DividendPool.sol` | 135 | Merkle distribution logic |
-| `ArcanaPaymaster.sol` | 95 | Gasless claim sponsorship |
+| `ArckanaPaymaster.sol` | 95 | Gasless claim sponsorship |
 | `Deploy.s.sol` | 50 | Deployment script |
 
 ### iApp
@@ -174,9 +174,9 @@ Arcana/
 
 ### Addresses
 (To be filled after deployment)
-- ArcanaToken: `0x...`
+- ArckanaToken: `0x...`
 - DividendPool: `0x...`
-- ArcanaPaymaster: `0x...`
+- ArckanaPaymaster: `0x...`
 
 ## Testing
 
@@ -222,7 +222,7 @@ npm run dev
 
 ## Resources
 
-- **Repository**: https://github.com/carlos-israelj/Arcana
+- **Repository**: https://github.com/carlos-israelj/Arckana
 - **Documentation**: See `/docs` folder
 - **Demo Video**: [TBD]
 - **Deployed App**: [TBD]

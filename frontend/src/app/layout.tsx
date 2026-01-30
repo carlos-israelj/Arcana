@@ -6,7 +6,7 @@ import { Web3Provider } from '@/providers/Web3Provider';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Arcana - Confidential Dividend Distribution',
+  title: 'Arckana - Confidential Dividend Distribution',
   description: 'Private yield distribution for tokenized treasury funds powered by iExec',
 };
 

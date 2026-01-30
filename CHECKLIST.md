@@ -1,4 +1,4 @@
-# Arcana Development Checklist
+# Arckana Development Checklist
 
 ## ✅ Project Structure
 - [x] Created main folders: contracts, iapp, frontend, docs
@@ -7,11 +7,11 @@
 - [x] Created README.md
 
 ## ✅ Smart Contracts
-- [x] ArcanaToken.sol - ERC-20 mock token
+- [x] ArckanaToken.sol - ERC-20 mock token
 - [x] DividendPool.sol - Merkle distribution
-- [x] ArcanaPaymaster.sol - ERC-4337 paymaster
+- [x] ArckanaPaymaster.sol - ERC-4337 paymaster
 - [x] Deploy.s.sol - Deployment script
-- [x] Arcana.t.sol - Test suite
+- [x] Arckana.t.sol - Test suite
 - [x] foundry.toml - Foundry configuration
 - [x] contracts/README.md - Contract documentation
 

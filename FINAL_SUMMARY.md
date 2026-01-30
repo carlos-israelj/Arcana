@@ -2,7 +2,7 @@
 
 ## Estado del Proyecto: ✅ COMPLETADO
 
-El proyecto Arcana ha sido completado exitosamente y está listo para deployment y testing.
+El proyecto Arckana ha sido completado exitosamente y está listo para deployment y testing.
 
 ---
 
@@ -23,11 +23,11 @@ El proyecto Arcana ha sido completado exitosamente y está listo para deployment
 
 | Archivo | Propósito | Estado |
 |---------|-----------|--------|
-| `ArcanaToken.sol` | Token ERC-20 mock (simula BUIDL) | ✅ Completo |
+| `ArckanaToken.sol` | Token ERC-20 mock (simula BUIDL) | ✅ Completo |
 | `DividendPool.sol` | Sistema de distribución con Merkle | ✅ Completo |
-| `ArcanaPaymaster.sol` | Paymaster ERC-4337 gasless | ✅ Completo |
+| `ArckanaPaymaster.sol` | Paymaster ERC-4337 gasless | ✅ Completo |
 | `Deploy.s.sol` | Script de deployment | ✅ Completo |
-| `Arcana.t.sol` | Test suite | ✅ Completo |
+| `Arckana.t.sol` | Test suite | ✅ Completo |
 | `foundry.toml` | Configuración Foundry | ✅ Completo |
 
 **Características**:
@@ -220,12 +220,12 @@ El proyecto Arcana ha sido completado exitosamente y está listo para deployment
 
 **Ruta completa**: 
 ```
-/mnt/c/Users/CarlosIsraelJiménezJ/Documents/iExecPrueba/Arcana/
+/mnt/c/Users/CarlosIsraelJiménezJ/Documents/iExecPrueba/Arckana/
 ```
 
 **Estructura**:
 ```
-Arcana/
+Arckana/
 ├── contracts/           # Solidity smart contracts
 ├── iapp/               # Python TEE application  
 ├── frontend/           # Next.js web app
@@ -271,7 +271,7 @@ Arcana/
 ## 📞 Información de Contacto
 
 - **GitHub**: [@carlos-israelj](https://github.com/carlos-israelj)
-- **Repository**: https://github.com/carlos-israelj/Arcana
+- **Repository**: https://github.com/carlos-israelj/Arckana
 - **Hackathon**: iExec Hack4Privacy 2026
 
 ---
@@ -320,7 +320,7 @@ Del análisis del quickstart `my-first-iapp`:
 
 ## 🏆 Conclusión
 
-**Arcana está 100% completo y listo para:**
+**Arckana está 100% completo y listo para:**
 - ✅ Deployment a testnets
 - ✅ Testing end-to-end
 - ✅ Demo recording

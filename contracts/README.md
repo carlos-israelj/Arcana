@@ -1,10 +1,10 @@
-# Arcana Smart Contracts
+# Arckana Smart Contracts
 
 Solidity smart contracts for confidential dividend distribution.
 
 ## Contracts
 
-### ArcanaToken.sol
+### ArckanaToken.sol
 Mock ERC-20 token simulating a tokenized treasury fund (like BlackRock's BUIDL).
 
 **Features:**
@@ -21,7 +21,7 @@ Main distribution contract with Merkle proof verification.
 - Prevents double-claiming
 - Operator-controlled rounds
 
-### ArcanaPaymaster.sol
+### ArckanaPaymaster.sol
 ERC-4337 Paymaster for gasless claims.
 
 **Features:**

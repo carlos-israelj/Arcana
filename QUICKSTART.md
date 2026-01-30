@@ -1,6 +1,6 @@
-# Arcana - Quick Start Guide
+# Arckana - Quick Start Guide
 
-Get Arcana up and running in minutes!
+Get Arckana up and running in minutes!
 
 ## Prerequisites
 
@@ -13,8 +13,8 @@ Install the following tools:
 ## 1. Clone Repository
 
 ```bash
-git clone https://github.com/carlos-israelj/Arcana.git
-cd Arcana
+git clone https://github.com/carlos-israelj/Arckana.git
+cd Arckana
 ```
 
 ## 2. Smart Contracts Setup
@@ -208,7 +208,7 @@ docker build --no-cache -t arcana-iapp .
 
 ## Getting Help
 
-- GitHub Issues: [Report bugs](https://github.com/carlos-israelj/Arcana/issues)
+- GitHub Issues: [Report bugs](https://github.com/carlos-israelj/Arckana/issues)
 - Documentation: [Read full docs](./docs/)
 - iExec Discord: [Get support](https://discord.gg/iexec)
 

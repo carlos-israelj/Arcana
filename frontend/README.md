@@ -1,6 +1,6 @@
-# Arcana Frontend
+# Arckana Frontend
 
-Next.js frontend for Arcana - Confidential Dividend Distribution System.
+Next.js frontend for Arckana - Confidential Dividend Distribution System.
 
 ## 🚀 Quick Start
 
@@ -95,7 +95,7 @@ See [VERCEL_DEPLOYMENT.md](../VERCEL_DEPLOYMENT.md) for complete deployment guid
 | Variable | Description | Required |
 |----------|-------------|----------|
 | `NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID` | WalletConnect project ID | Yes |
-| `NEXT_PUBLIC_ARCANA_TOKEN_ADDRESS` | ArcanaToken contract address | Yes |
+| `NEXT_PUBLIC_ARCANA_TOKEN_ADDRESS` | ArckanaToken contract address | Yes |
 | `NEXT_PUBLIC_DIVIDEND_POOL_ADDRESS` | DividendPool contract address | Yes |
 | `NEXT_PUBLIC_PAYMASTER_ADDRESS` | Paymaster contract address | Yes |
 | `NEXT_PUBLIC_PAYMENT_TOKEN_ADDRESS` | Payment token address | Yes |
@@ -191,7 +191,7 @@ See [VERCEL_DEPLOYMENT.md](../VERCEL_DEPLOYMENT.md) for complete deployment guid
 
 ## 🔗 Links
 
-- **GitHub**: https://github.com/carlos-israelj/Arcana
+- **GitHub**: https://github.com/carlos-israelj/Arckana
 - **Live Demo**: [URL after deployment]
 - **Documentation**: https://docs.iex.ec/
 

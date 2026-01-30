@@ -1,6 +1,6 @@
 # Feedback on iExec Tools & Documentation
 
-## Project: Arcana - Confidential Dividend Distribution
+## Project: Arckana - Confidential Dividend Distribution
 **Hackathon:** iExec Hack4Privacy 2026
 **Developer:** Carlos Israel Jiménez
 
@@ -8,7 +8,7 @@
 
 ## Overall Experience
 
-Building Arcana with iExec's confidential computing stack was an enlightening experience. The ability to process sensitive financial data (token balances and dividend calculations) inside a Trusted Execution Environment opens up entirely new use cases for DeFi and RWA protocols.
+Building Arckana with iExec's confidential computing stack was an enlightening experience. The ability to process sensitive financial data (token balances and dividend calculations) inside a Trusted Execution Environment opens up entirely new use cases for DeFi and RWA protocols.
 
 ---
 
@@ -102,7 +102,7 @@ Building Arcana with iExec's confidential computing stack was an enlightening ex
 ## Documentation Suggestions 📚
 
 ### 1. More Real-World Examples
-- DeFi use cases (like Arcana)
+- DeFi use cases (like Arckana)
 - Healthcare data privacy
 - Supply chain verification
 - Identity management
@@ -124,7 +124,7 @@ Building Arcana with iExec's confidential computing stack was an enlightening ex
 
 ---
 
-## What Made Arcana Possible 🌟
+## What Made Arckana Possible 🌟
 
 Despite the challenges, iExec's stack made it possible to build something that would be **impossible** with traditional blockchain technology:
 
@@ -161,4 +161,4 @@ With improved documentation, better dev tools, and more examples, iExec could be
 
 ---
 
-*This feedback is based on experience building Arcana during iExec Hack4Privacy 2026*
+*This feedback is based on experience building Arckana during iExec Hack4Privacy 2026*

@@ -24,7 +24,7 @@ export default function ProtectBalance() {
           holder: address,
           balance: parseInt(balance) * 1000000, // Convert to 6 decimals
         },
-        name: `Arcana Balance - ${address.slice(0, 8)}`,
+        name: `Arckana Balance - ${address.slice(0, 8)}`,
       });
 
       setProtectedDataAddress(protectedData.address);
@@ -126,7 +126,7 @@ export default function ProtectBalance() {
           </button>
 
           <p className="text-gray-500 text-xs text-center">
-            This allows the Arcana iApp to include your balance in bulk processing
+            This allows the Arckana iApp to include your balance in bulk processing
           </p>
         </div>
       )}

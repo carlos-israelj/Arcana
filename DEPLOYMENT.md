@@ -1,6 +1,6 @@
-# Arcana Deployment Guide
+# Arckana Deployment Guide
 
-Complete guide for deploying Arcana to production networks.
+Complete guide for deploying Arckana to production networks.
 
 ## Prerequisites
 
@@ -86,10 +86,10 @@ forge script script/Deploy.s.sol \
 
 # Save the output addresses!
 # Example output:
-# ArcanaToken: 0x1234...
+# ArckanaToken: 0x1234...
 # PaymentToken: 0x5678...
 # DividendPool: 0x9abc...
-# ArcanaPaymaster: 0xdef0...
+# ArckanaPaymaster: 0xdef0...
 ```
 
 **Important:** Save all contract addresses - you'll need them later.

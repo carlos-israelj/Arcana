@@ -1,6 +1,6 @@
 # Mejoras Aplicadas desde el Quickstart
 
-Este documento resume las mejoras aplicadas al proyecto Arcana basándose en el análisis del quickstart `my-first-iapp`.
+Este documento resume las mejoras aplicadas al proyecto Arckana basándose en el análisis del quickstart `my-first-iapp`.
 
 ## Aprendizajes Clave del Quickstart
 
@@ -161,7 +161,7 @@ Esto confirma:
 
 ## Próximos Pasos
 
-Con estas mejoras, el proyecto Arcana está listo para:
+Con estas mejoras, el proyecto Arckana está listo para:
 
 1. **Testing Local** ✅
    - Crear `test_input/args.txt` con el monto
@@ -187,7 +187,7 @@ Con estas mejoras, el proyecto Arcana está listo para:
 
 ## Diferencias con el Quickstart
 
-| Aspecto | Quickstart (JS) | Arcana (Python) |
+| Aspecto | Quickstart (JS) | Arckana (Python) |
 |---------|----------------|-----------------|
 | Lenguaje | JavaScript/Node.js | Python 3.11 |
 | Base Image | node:20-alpine | python:3.11-alpine |
@@ -205,7 +205,7 @@ El quickstart fue extremadamente útil para entender:
 - ✅ El proceso de deployment
 - ✅ La estructura de TEE images
 
-Todas estas lecciones se han aplicado al proyecto Arcana, que ahora está **production-ready** para iExec Bellecour.
+Todas estas lecciones se han aplicado al proyecto Arckana, que ahora está **production-ready** para iExec Bellecour.
 
 ---
 

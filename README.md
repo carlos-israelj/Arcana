@@ -1,4 +1,4 @@
-# ARCANA 🔮
+# ARCKANA 🔮
 
 **Confidential Dividend Distribution for Tokenized Treasury Funds**
 
@@ -21,7 +21,7 @@ Tokenized treasury funds like BlackRock's BUIDL ($2.5B AUM) distribute dividends
 
 ## 💡 Solution
 
-**Arcana** provides a confidential dividend distribution layer using:
+**Arckana** provides a confidential dividend distribution layer using:
 
 1. **iExec DataProtector** - Holders encrypt their token balances
 2. **TEE Processing** - An iApp processes ALL balances in a single secure execution
@@ -35,7 +35,7 @@ Tokenized treasury funds like BlackRock's BUIDL ($2.5B AUM) distribute dividends
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                    ARCANA SYSTEM                         │
+│                    ARCKANA SYSTEM                        │
 ├─────────────────────────────────────────────────────────┤
 │                                                          │
 │  Frontend (Next.js + RainbowKit)                        │
@@ -47,9 +47,9 @@ Tokenized treasury funds like BlackRock's BUIDL ($2.5B AUM) distribute dividends
 │  ↓ Generate Merkle tree                                  │
 │                                                          │
 │  Smart Contracts (Arbitrum Sepolia)                     │
-│  • ArcanaToken (Mock treasury token)                    │
+│  • ArckanaToken (Mock treasury token)                    │
 │  • DividendPool (Merkle distribution)                   │
-│  • ArcanaPaymaster (Gasless claims)                     │
+│  • ArckanaPaymaster (Gasless claims)                     │
 │                                                          │
 └─────────────────────────────────────────────────────────┘
 ```
@@ -87,8 +87,8 @@ Tokenized treasury funds like BlackRock's BUIDL ($2.5B AUM) distribute dividends
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/carlos-israelj/Arcana.git
-cd Arcana
+git clone https://github.com/carlos-israelj/Arckana.git
+cd Arckana
 ```
 
 ### 2. Deploy Smart Contracts
@@ -171,12 +171,12 @@ User receives encrypted proof → Claims dividend using Merkle proof → Gas spo
 ## 📂 Project Structure
 
 ```
-Arcana/
+Arckana/
 ├── contracts/          # Solidity smart contracts
 │   ├── src/
-│   │   ├── ArcanaToken.sol
+│   │   ├── ArckanaToken.sol
 │   │   ├── DividendPool.sol
-│   │   └── ArcanaPaymaster.sol
+│   │   └── ArckanaPaymaster.sol
 │   ├── test/
 │   └── script/
 │
@@ -232,7 +232,7 @@ npm run test
 **Track:** Confidential Real-World Assets (RWA)
 **Bonus Target:** Bulk Processing + Account Abstraction ($300)
 
-### How Arcana Qualifies
+### How Arckana Qualifies
 
 ✅ **RWA Use Case** - Tokenized treasury funds (BUIDL-like)
 ✅ **Confidential Computing** - iExec TEE for private calculations
@@ -248,9 +248,9 @@ npm run test
 
 | Contract | Address |
 |----------|---------|
-| ArcanaToken | `0x...` |
+| ArckanaToken | `0x...` |
 | DividendPool | `0x...` |
-| ArcanaPaymaster | `0x...` |
+| ArckanaPaymaster | `0x...` |
 | PaymentToken | `0x...` |
 
 *(Update after deployment)*
@@ -302,7 +302,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Contact
 
 - GitHub: [@carlos-israelj](https://github.com/carlos-israelj)
-- Project Repo: [github.com/carlos-israelj/Arcana](https://github.com/carlos-israelj/Arcana)
+- Project Repo: [github.com/carlos-israelj/Arckana](https://github.com/carlos-israelj/Arckana)
 
 ---
 

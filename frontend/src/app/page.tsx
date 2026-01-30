@@ -18,7 +18,7 @@ export default function Home() {
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center gap-2">
             <span className="text-2xl">🔮</span>
-            <h1 className="text-xl font-bold">Arcana</h1>
+            <h1 className="text-xl font-bold">Arckana</h1>
             <span className="text-gray-500 text-sm">Confidential Dividends</span>
           </div>
           <ConnectButton />

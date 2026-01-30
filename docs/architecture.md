@@ -1,14 +1,14 @@
-# Arcana Architecture Documentation
+# Arckana Architecture Documentation
 
 ## Overview
 
-Arcana is a confidential dividend distribution system that leverages iExec's Trusted Execution Environment (TEE) to provide privacy-preserving yield distribution for tokenized treasury funds.
+Arckana is a confidential dividend distribution system that leverages iExec's Trusted Execution Environment (TEE) to provide privacy-preserving yield distribution for tokenized treasury funds.
 
 ## System Components
 
 ### 1. Smart Contracts (Arbitrum Sepolia)
 
-#### ArcanaToken.sol
+#### ArckanaToken.sol
 Mock ERC-20 token representing a tokenized treasury fund (like BlackRock's BUIDL).
 
 **Key Features:**
@@ -31,7 +31,7 @@ Main distribution contract handling confidential dividend claims.
 3. Contract verifies proof and transfers payment token
 4. Prevents double-claiming
 
-#### ArcanaPaymaster.sol
+#### ArckanaPaymaster.sol
 ERC-4337 Paymaster for gasless dividend claims.
 
 **Key Features:**

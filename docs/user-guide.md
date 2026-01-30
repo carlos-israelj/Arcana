@@ -1,4 +1,4 @@
-# Arcana User Guide
+# Arckana User Guide
 
 ## Getting Started
 
@@ -9,7 +9,7 @@
 
 ### Step 1: Connect Your Wallet
 
-1. Visit the Arcana web app
+1. Visit the Arckana web app
 2. Click "Connect Wallet" in the top-right corner
 3. Select your wallet provider (MetaMask, WalletConnect, etc.)
 4. Approve the connection request
@@ -36,13 +36,13 @@ Protecting your balance means encrypting it using iExec's DataProtector so that 
 
 ### Step 3: Grant Access for Distribution
 
-After protecting your balance, you need to grant the Arcana iApp permission to include your balance in bulk processing.
+After protecting your balance, you need to grant the Arckana iApp permission to include your balance in bulk processing.
 
 **How to Grant Access:**
 
 1. After protecting, click "📋 Grant Access for Distribution"
 2. Sign the transaction in your wallet
-3. This gives the Arcana iApp permission to read your encrypted balance
+3. This gives the Arckana iApp permission to read your encrypted balance
 4. You can grant access for multiple distribution rounds (default: 1000)
 
 **Why is this needed?**
@@ -91,7 +91,7 @@ If the automatic claim data isn't loaded, you can enter it manually:
 4. Click "Claim"
 
 **Important:**
-- Claims are gasless! The Arcana Paymaster sponsors your gas fees
+- Claims are gasless! The Arckana Paymaster sponsors your gas fees
 - You can only claim once per round
 - If you already claimed, you'll see "Already Claimed"
 
@@ -104,7 +104,7 @@ If the automatic claim data isn't loaded, you can enter it manually:
 **A:** No. Your balance is encrypted and only accessible inside the secure TEE. Not even iExec node operators can see your actual balance.
 
 ### Q: How much does it cost to claim?
-**A:** Claims are completely FREE thanks to the Arcana Paymaster sponsoring gas fees.
+**A:** Claims are completely FREE thanks to the Arckana Paymaster sponsoring gas fees.
 
 ### Q: What if I miss a distribution round?
 **A:** No problem! You can still claim from previous rounds at any time. Just switch to the appropriate round in the claim interface.
@@ -154,7 +154,7 @@ If the automatic claim data isn't loaded, you can enter it manually:
 ## Support
 
 For additional help:
-- Check the [GitHub Issues](https://github.com/carlos-israelj/Arcana/issues)
+- Check the [GitHub Issues](https://github.com/carlos-israelj/Arckana/issues)
 - Read the [Architecture Documentation](./architecture.md)
 - Contact the team
 
