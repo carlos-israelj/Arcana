@@ -3,30 +3,23 @@
 import { useState } from 'react';
 import { useAccount } from 'wagmi';
 import { IAPP_ADDRESS } from '@/lib/contracts';
+import { useProtectData, useGrantAccess } from '@/hooks/useDataProtector';
 
 export default function ProtectBalance() {
   const { address } = useAccount();
   const [balance, setBalance] = useState('');
-  const [isProtecting, setIsProtecting] = useState(false);
   const [isProtected, setIsProtected] = useState(false);
   const [protectedDataAddress, setProtectedDataAddress] = useState('');
+
+  const { protectData, isProtecting, status: protectStatus } = useProtectData();
+  const { grantAccess, isGranting, status: grantStatus } = useGrantAccess();
 
   const handleProtect = async () => {
     if (!balance || !address) return;
 
-    setIsProtecting(true);
-
     try {
-      // Import DataProtector SDK dynamically
-      const { IExecDataProtector } = await import('@iexec/dataprotector');
-
-      // Initialize DataProtector with Arbitrum Sepolia experimental support
-      const dataProtector = new IExecDataProtector(window.ethereum as any, {
-        allowExperimentalNetworks: true,
-      });
-
-      // Create protected data
-      const protectedData = await dataProtector.protectData({
+      // Create protected data with status updates
+      const protectedData = await protectData({
         data: {
           holder: address,
           balance: parseInt(balance) * 1000000, // Convert to 6 decimals
@@ -38,12 +31,11 @@ export default function ProtectBalance() {
       setIsProtected(true);
 
       console.log('Protected data created:', protectedData);
+      alert(`Balance protected successfully!\nAddress: ${protectedData.address}`);
 
     } catch (error) {
       console.error('Error protecting data:', error);
       alert('Error protecting data. Check console for details.');
-    } finally {
-      setIsProtecting(false);
     }
   };
 
@@ -51,17 +43,12 @@ export default function ProtectBalance() {
     if (!protectedDataAddress) return;
 
     try {
-      const { IExecDataProtector } = await import('@iexec/dataprotector');
-      const dataProtector = new IExecDataProtector(window.ethereum as any, {
-        allowExperimentalNetworks: true,
-      });
-
-      // Grant access to iApp
+      // Grant access to iApp with status updates
       // This automatically deploys orders on the network for the iApp
-      const grantedAccess = await dataProtector.grantAccess({
+      const grantedAccess = await grantAccess({
         protectedData: protectedDataAddress,
         authorizedApp: IAPP_ADDRESS,
-        authorizedUser: '0x0000000000000000000000000000000000000000', // Any user can use this data
+        authorizedUser: '0x0000000000000000000000000000000000000000', // Any user
         numberOfAccess: 1000, // Allow multiple distributions
       });
 
@@ -101,6 +88,12 @@ export default function ProtectBalance() {
             </p>
           </div>
 
+          {protectStatus && (
+            <div className="text-sm text-blue-400 mb-2">
+              {protectStatus.title}...
+            </div>
+          )}
+
           <button
             onClick={handleProtect}
             disabled={!balance || isProtecting}
@@ -118,11 +111,18 @@ export default function ProtectBalance() {
             </p>
           </div>
 
+          {grantStatus && (
+            <div className="text-sm text-blue-400 mb-2">
+              {grantStatus.title}...
+            </div>
+          )}
+
           <button
             onClick={handleGrantAccess}
-            className="w-full bg-blue-600 hover:bg-blue-700 py-3 rounded-lg font-medium transition"
+            disabled={isGranting}
+            className="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-gray-600 disabled:cursor-not-allowed py-3 rounded-lg font-medium transition"
           >
-            📋 Grant Access for Distribution
+            {isGranting ? 'Granting Access...' : '📋 Grant Access for Distribution'}
           </button>
 
           <p className="text-gray-500 text-xs text-center">
